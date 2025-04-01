@@ -11,6 +11,14 @@ on:
         default: "hello_solana"
 
 jobs:
+  install_pnpm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
   test:
     uses: borisnieuwenhuis/github-workflows/.github/workflows/test.yaml@v1.0.0
     with:
