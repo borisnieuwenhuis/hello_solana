@@ -11,7 +11,7 @@ on:
         default: "hello_solana"
 
 jobs:
-  test:
+  setup:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,11 +26,12 @@ jobs:
         with:
           version: 8
 
-      - name: Run tests
-        uses: borisnieuwenhuis/github-workflows/.github/workflows/test.yaml@v1.0.0
-        with:
-          program: hello_solana
-          testresults: junit.xml
+  test:
+    needs: setup
+    uses: borisnieuwenhuis/github-workflows/.github/workflows/test.yaml@v1.0.0
+    with:
+      program: hello_solana
+      testresults: junit.xml
 
   process-results:
     runs-on: ubuntu-latest
