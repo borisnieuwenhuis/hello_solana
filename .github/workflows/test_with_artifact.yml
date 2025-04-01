@@ -11,23 +11,7 @@ on:
         default: "hello_solana"
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
-
   test:
-    needs: setup
     uses: borisnieuwenhuis/github-workflows/.github/workflows/test.yaml@v1.0.0
     with:
       program: hello_solana
