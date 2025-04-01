@@ -1,0 +1,11 @@
+Streaming transaction logs mentioning 2phbC62wekpw95XuBk4i1KX4uA8zBUWmYbiTMhicSuBV. Confirmed commitment
+Transaction executed in slot 5:
+  Signature: 2ibBB4DvXUgcJwy8zL7ZtXuWrVkvfaPQF8R99vtEJi6CCYrTVMdfs8s4RAvYeqkDzK7c7J9FhRC1K4dD9nQWNwfQ
+  Status: Ok
+  Log Messages:
+    Program 2phbC62wekpw95XuBk4i1KX4uA8zBUWmYbiTMhicSuBV invoke [1]
+    Program log: Instruction: Hello
+    Program log: Hello, Solana!
+    Program log: Our program's Program ID: 2phbC62wekpw95XuBk4i1KX4uA8zBUWmYbiTMhicSuBV
+    Program 2phbC62wekpw95XuBk4i1KX4uA8zBUWmYbiTMhicSuBV consumed 11763 of 200000 compute units
+    Program 2phbC62wekpw95XuBk4i1KX4uA8zBUWmYbiTMhicSuBV success
