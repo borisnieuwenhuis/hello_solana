@@ -20,6 +20,7 @@ jobs:
           version: 9
 
   test:
+    needs: install_pnpm
     uses: borisnieuwenhuis/github-workflows/.github/workflows/test.yaml@v1.0.0
     with:
       program: hello_solana
